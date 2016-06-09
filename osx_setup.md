@@ -26,6 +26,9 @@ echo "export PATH=$PATH:/usr/local/opt/go/libexec/bin" >> ~/.bash_profile
 echo "export GOPATH=$HOME/code/go" >> ~/.bash_profile
 mkdir -p ~/code/go/src/github/jahrlin
 
+# Install npm and node
+brew install node
+
 # Reload bash_profile
 source ~./bash_profile
 
