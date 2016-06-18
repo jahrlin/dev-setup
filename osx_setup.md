@@ -20,14 +20,26 @@ echo "export PATH=/usr/local/bin:$PATH" >> ~/.bash_profile
 # Install vim
 brew install vim
 
+# Install pathogen, for vim plugins
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+echo "execute pathogen#infect()" >> ~/.vimrc
+cd ~/.vim/bundle
+git clone https://github.com/altercation/vim-colors-solarized.vim
+
+# Install nvm and node
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
+source ~/.bash_profile
+
+nvm install 4.4.5
+nvm install node
+
 # Install and set up go
 brew install go
 echo "export PATH=$PATH:/usr/local/opt/go/libexec/bin" >> ~/.bash_profile
 echo "export GOPATH=$HOME/code/go" >> ~/.bash_profile
 mkdir -p ~/code/go/src/github/jahrlin
-
-# Install npm and node
-brew install node
 
 # Reload bash_profile
 source ~./bash_profile
