@@ -26,7 +26,7 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 echo "execute pathogen#infect()" >> ~/.vimrc
 cd ~/.vim/bundle
-git clone https://github.com/altercation/vim-colors-solarized.vim
+git clone https://github.com/tpope/vim-pathogen.git
 
 # Install nvm and node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
