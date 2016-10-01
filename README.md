@@ -52,7 +52,7 @@ echo "export GOPATH=$HOME/code/go" >> ~/.bash_profile
 mkdir -p ~/code/go/src/github/jahrlin
 
 # Reload bash_profile
-source ~./bash_profile
+source ~/.bash_profile
 
 # Done!
 echo "Done!"
