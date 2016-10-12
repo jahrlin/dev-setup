@@ -35,8 +35,14 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 echo "execute pathogen#infect()" >> ~/.vimrc
 cd ~/.vim/bundle
 git clone https://github.com/tpope/vim-pathogen.git
-git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
-git clone https://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
+git clone https://github.com/scrooloose/nerdtree.git
+git clone https://github.com/altercation/vim-colors-solarized.git
+git clone https://github.com/yssl/QFEnter.git
+git clone https://github.com/mileszs/ack.vim.git
+git clone https://github.com/ctrlpvim/ctrlp.vim.git
+git clone https://github.com/vim-airline/vim-airline
+git clone https://github.com/bling/vim-bufferline
+git clone git://github.com/tpope/vim-fugitive.git
 
 # Install nvm and node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
