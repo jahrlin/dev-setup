@@ -40,9 +40,11 @@ git clone https://github.com/altercation/vim-colors-solarized.git
 git clone https://github.com/yssl/QFEnter.git
 git clone https://github.com/mileszs/ack.vim.git
 git clone https://github.com/ctrlpvim/ctrlp.vim.git
-git clone https://github.com/vim-airline/vim-airline
-git clone https://github.com/bling/vim-bufferline
-git clone git://github.com/tpope/vim-fugitive.git
+git clone https://github.com/vim-airline/vim-airline.git
+git clone https://github.com/bling/vim-bufferline.git
+git clone https://github.com/tpope/vim-fugitive.git
+git clone https://github.com/scrooloose/syntastic.git
+git clone https://github.com/blueshirts/darcula.git
 
 # Install nvm and node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
