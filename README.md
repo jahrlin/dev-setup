@@ -13,6 +13,7 @@ Now that homebrew is set up just paste this into your terminal:
 ```bash
 brew update
 brew install vim
+brew install macvim
 
 # Install Cask and stuff
 brew tap caskroom/cask
