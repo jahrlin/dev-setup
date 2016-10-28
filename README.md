@@ -62,6 +62,9 @@ mkdir -p ~/code/go/src/github/jahrlin
 # Reload bash_profile
 source ~/.bash_profile
 
+# Install zsh and oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # Done!
 echo "Done!"
 ```
