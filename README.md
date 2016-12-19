@@ -9,11 +9,26 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 When prompted to install Xcode, accept and install.
 
 Now that homebrew is set up just paste this into your terminal:
+```zsh
+# Install zsh and oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-```bash
+# Get the latest git version
+brew install git
+
+# Get my dotfiles
+git clone https://github.com/jahrlin/dotfiles.git
+
+rm ~/.zshrc
+ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
+
+rm ~/.vimrc
+ln -s ~/dotfiles/vim/.vimrc ~/.vimrc
+```
+
+```zsh
 brew update
 brew install vim
-brew install macvim
 
 # Install Cask and stuff
 brew tap caskroom/cask
@@ -23,12 +38,6 @@ brew cask install google-chrome
 ```
 
 ```bash
-# Get the latest git version
-brew install git
-
-# Make sure OSX uses our own installs
-echo "export PATH=/usr/local/bin:$PATH" >> ~/.bash_profile
-
 # Install pathogen, for vim plugins
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
@@ -57,15 +66,12 @@ nvm install node
 
 # Install and set up go
 brew install go
-echo "export PATH=$PATH:/usr/local/opt/go/libexec/bin" >> ~/.bash_profile
-echo "export GOPATH=$HOME/code/go" >> ~/.bash_profile
+echo "export PATH=$PATH:/usr/local/opt/go/libexec/bin" >> ~/.zshrc
+echo "export GOPATH=$HOME/code/go" >> ~/.zshrc
 mkdir -p ~/code/go/src/github/jahrlin
 
-# Reload bash_profile
-source ~/.bash_profile
-
-# Install zsh and oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Reload zsh
+source ~/.zshrc
 
 # Done!
 echo "Done!"
