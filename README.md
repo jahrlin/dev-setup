@@ -29,12 +29,15 @@ ln -s ~/dotfiles/vim/.vimrc ~/.vimrc
 ```zsh
 brew update
 brew install vim
+brew install tmux
+
 
 # Install Cask and stuff
 brew tap caskroom/cask
 brew cask install iterm2
 brew cask install spotify
 brew cask install google-chrome
+brew cask install spectacle
 ```
 
 ```bash
