@@ -20,10 +20,11 @@ brew install git
 git clone https://github.com/jahrlin/dotfiles.git
 
 rm ~/.zshrc
-ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
-
 rm ~/.vimrc
+
+ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s ~/dotfiles/vim/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ```
 
 ```zsh
