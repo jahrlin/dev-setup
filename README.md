@@ -31,7 +31,7 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 brew update
 brew install vim
 brew install tmux
-
+gem install tmuxinator
 
 # Install Cask and stuff
 brew tap caskroom/cask
@@ -41,7 +41,7 @@ brew cask install google-chrome
 brew cask install spectacle
 ```
 
-```bash
+```zsh
 # Install pathogen, for vim plugins
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
@@ -60,12 +60,13 @@ git clone https://github.com/tpope/vim-fugitive.git
 git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/blueshirts/darcula.git
 git clone https://github.com/jiangmiao/auto-pairs.git
+git clone https://github.com/christoomey/vim-tmux-navigator.git
 
 # Install nvm and node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
 source ~/.bash_profile
 
-nvm install 4.4.5
+nvm install lts/boron
 nvm install node
 
 # Install and set up go
