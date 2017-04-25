@@ -61,6 +61,8 @@ git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/blueshirts/darcula.git
 git clone https://github.com/jiangmiao/auto-pairs.git
 git clone https://github.com/christoomey/vim-tmux-navigator.git
+git clone https://github.com/vim-airline/vim-airline-themes.git
+git clone https://github.com/pangloss/vim-javascript.git
 
 # Install nvm and node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
